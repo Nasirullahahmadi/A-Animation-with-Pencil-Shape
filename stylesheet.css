@@ -1,0 +1,64 @@
+/* ---------------- FONT ----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ---------------- PENCIL SHAPE ----------------*/
+.pencil_shape {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'poppins', sans-serif;
+    overflow: hidden;
+}
+
+.text {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #666666;
+    font-weight: 50;
+    font-size: 7rem;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.text span {
+    position: relative;
+    display: inline-block;
+    transition: 1s;
+
+}
+
+.text:hover span {
+    transform: rotate(190deg) translate(5px, 0);
+    transition-delay: 1s;
+}
+
+.text span:before {
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 7px;
+    width: 14px;
+    height: 1000px;
+    background: red;
+    border-left: #000 24px solid;
+    border-right: green solid 24px;
+    box-shadow: 0 0 0 1px #afafb6;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: 0.5s;
+}
+
+.text:hover span:before {
+    transform: scaleY(1);
+}
+
+
+
+
+
+
+
